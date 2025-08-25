@@ -25,7 +25,7 @@ function findDiscordInvites(message) {
 
 const invites = findDiscordInvites(message.content);
 
-if (invites.find(invite => unsafeInvites.includes(invite.inviteCode)) {
+if (invites.find(invite => unsafeInvites.includes(invite.inviteCode))) {
 	message.delete();
 
 	try {
